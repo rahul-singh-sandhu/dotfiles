@@ -1,0 +1,144 @@
+/*
+black:   '#282c34'
+red:     '#e06c75'
+green:   '#98c379'
+yellow:  '#e5c07b'
+blue:    '#81A1C1'
+magenta: '#c678dd'
+cyan:    '#56b6c2'
+white:   '#c8ccd4'
+*/
+
+* {
+    border: 0px solid rgba(40, 44, 52, 0);
+    border-radius: 2px;
+    font-family: Iosevka Nerd Font, Font Awesome, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    min-height: 0;
+    padding: 1.5px;
+}
+
+window#waybar {
+    background-color: #1f2227;
+    background: transparent;
+    color: #c8ccd4;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 0;
+}
+
+window > box {
+    margin-top: 20.5px;
+    margin-left: 14.7px;
+    margin-right: 14.7px;
+    background: #1f2227;
+    color: #c8ccd4;
+}
+
+window {
+    opacity: 0.8;
+}
+
+label:focus {
+    background-color: #282c34;
+}
+
+@keyframes blink {
+    to {
+        background-color: #c8ccd4;
+        color: #282c34;
+    }
+}
+
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#pulseaudio,
+#workspaces,
+#clock,
+#tray,
+#mode,
+#idle_inhibitor,
+
+#custom-launch {
+    margin-right: 4px;
+    margin-left: 4px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    background-color: #1f2227;
+    color: #fff;
+}
+
+#workspaces button {
+    padding: 5px 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 1px;
+    color: #c8ccd4;
+    font-size: 15px;
+}
+
+#workspaces button:hover {
+    background-color: #c8ccd4;
+    color: #1f2227;
+    font-size: 15px;
+}
+
+#workspaces button.focused {
+    background-color: #e06c75;
+    color: #282c34;
+    font-size: 15px;
+}
+
+#workspaces button.urgent {
+    background-color: #e04753;
+    font-size: 15px;
+}
+
+#pulseaudio {
+    color: #e06c75;
+    font-size: 15px;
+}
+
+#pulseaudio.muted {
+    color: #e06c75;
+    font-size: 15px;
+}
+
+#network {
+    color: #81a1c1;
+    font-size: 15px;
+}
+
+#clock {
+    color: #98c379;
+    font-size: 15px;
+}
+
+#cpu {
+    color: #e5c07b;
+    font-size: 15px;
+}
+
+#memory {
+    color: #c678dd;
+    font-size: 15px;
+}
+
+#custom-off {
+    margin-right: 11px;
+    margin-left: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    background-color: #e06c75;
+    color: #1f2227;
+}

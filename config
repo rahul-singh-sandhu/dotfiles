@@ -1,0 +1,74 @@
+{
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+	"memory",
+	"clock",
+	"custom/launch",
+        "custom/off"
+    ],
+    "custom/launch": {
+        "format": "",
+        "on-click": "rofi -show drun -show-icons"
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": " {icon} ",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        },
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
+    "pulseaudio": {
+    	"format": "{icon} {volume}%",
+        "format-muted": "婢 0%",
+	"format-icons": {
+		"default": ["","",""]
+	},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "直  {essid}",
+        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}",
+        "format-linked": "直  {ifname} (No IP)",
+        "format-disconnected": "睊  Disconnected",
+        "format-alt": "直  {ifname}: {ipaddr}/{cidr}"
+    },
+    "cpu": {
+    	"interval": 10,
+    	"format": " {}%",
+    	"max-length": 10
+    },
+    "memory": {
+    "interval": 30,
+    "format": " {}%",
+    "max-length": 10
+    },	
+    "clock": {
+        "interval": 1,
+        "format": "  {:%I:%M %p}",
+        "format-alt": "  {:%b %d, %G}"
+    },
+    "custom/off": {
+        "format": "",
+        "on-click": "swaymsg exit"
+    }
+}
